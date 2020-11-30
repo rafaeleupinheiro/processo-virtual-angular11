@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+  display: block;
+  margin: 40px auto;
+  max-width: 1170px;
+  position: relative;
+}
+
+.titulo-pagina {
+  color: #58585A;
+  font-size: 25px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.descricao-pagina {
+  color: #939598;
+  display: block;
+  font-size: 18px;
+  margin: 10px 0 50px;
+  text-align: center;
+  width: 100%;
+}
