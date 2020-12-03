@@ -7,18 +7,27 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MenuComponent} from './page/menu/menu.component';
 import {MatButtonModule} from '@angular/material/button';
-import {BeneficiarioComponent} from './page/beneficiario/beneficiario.component';
-import {ProcessoComponent} from './page/processo/processo.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {BeneficiarioCadastroComponent} from './page/beneficiario/beneficiario-cadastro/beneficiario-cadastro.component';
+import {BeneficiarioListagemComponent} from './page/beneficiario/beneficiario-listagem/beneficiario-listagem.component';
+
+// PRIMENG
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+import {HttpClientModule} from '@angular/common/http';
+import {ProcessoListagemComponent} from './page/processo/processo-listagem/processo-listagem.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {ShareService} from './service/share.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    BeneficiarioComponent,
-    ProcessoComponent
+    BeneficiarioCadastroComponent,
+    BeneficiarioListagemComponent,
+    ProcessoListagemComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +38,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MessagesModule,
+    MessageModule,
+    HttpClientModule,
+    MatTabsModule
   ],
-  providers: [],
+  providers: [ShareService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

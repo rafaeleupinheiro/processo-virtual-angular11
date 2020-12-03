@@ -13,10 +13,10 @@ export class AppComponent {
   }
 
   beneficiarioPage(): void {
-    this.router.navigate(['./beneficiario']);
+    this.router.navigate(['./beneficiario-listagem']);
   }
 
   processoPage(): void {
-    this.router.navigate(['./processo']);
+    this.router.navigate(['./processo-listagem']);
   }
 }

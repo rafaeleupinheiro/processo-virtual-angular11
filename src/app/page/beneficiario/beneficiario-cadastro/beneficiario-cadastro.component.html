@@ -1,0 +1,34 @@
+<div class="container">
+  <h2 class="titulo-pagina">CADASTRO DE BENEFICIÁRIO</h2>
+  <span class="descricao-pagina">Preencha as informações abaixo para realizar o cadastro.</span>
+
+  <div class="message">
+    <p-messages [(value)]="msgs"></p-messages>
+  </div>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Matrícula</mat-label>
+    <input type="matricula" matInput [formControl]="matricula" required>
+    <mat-error *ngIf="matricula.invalid">{{getErrorMessageMatricula()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Nome</mat-label>
+    <input type="nome" matInput [formControl]="nome" required>
+    <mat-error *ngIf="nome.invalid">{{getErrorMessageNome()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>CPF</mat-label>
+    <input type="cpf" matInput [formControl]="cpf" required>
+    <mat-error *ngIf="cpf.invalid">{{getErrorMessageCpf()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Orgão</mat-label>
+    <input type="orgao" matInput [formControl]="orgao" required>
+    <mat-error *ngIf="orgao.invalid">{{getErrorMessageOrgao()}}</mat-error>
+  </mat-form-field>
+
+  <div class="toolbar-button-row">
+    <button (click)="cadastrar()" mat-raised-button class="button-confirm">Cadastrar</button>
+    <button (click)="cancelar()" mat-raised-button class="button-cancel">Cancelar</button>
+  </div>
+</div>

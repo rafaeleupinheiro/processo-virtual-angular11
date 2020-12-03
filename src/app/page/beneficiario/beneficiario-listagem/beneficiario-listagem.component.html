@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 class="titulo-pagina">BENEFICIÁRIOS</h2>
+  <section>
+    <div class="toolbar-space-label"></div>
+    <div class="toolbar-button-row">
+      <button (click)="novoBeneficiario()" mat-raised-button class="button-new">Novo</button>
+    </div>
+  </section>
+
+  <div class="card-list" *ngFor="let beneficiario of listaBeneficiarios">
+    <a (click)="selecionaBeneficiario(beneficiario)">
+      <ul>
+        <li>
+          <p>MATRÍCULA: {{ beneficiario.matricula }}</p>
+          <p>NOME: {{ beneficiario.nome }}</p>
+          <p>CPF: {{ beneficiario.cpf }}</p>
+          <p>ORGÃO: {{ beneficiario.orgao }}</p>
+        </li>
+      </ul>
+    </a>
+  </div>
+</div>

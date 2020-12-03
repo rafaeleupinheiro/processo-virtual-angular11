@@ -1,0 +1,72 @@
+.button-new {
+  background-color: mediumseagreen;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.button-back {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.example-small-box, .example-large-box {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.example-small-box {
+  display: inline-table;
+  min-width: 150px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.example-large-box {
+  height: 300px;
+  width: 300px;
+}
+
+.card-list {
+  display: inline-table;
+  min-width: 150px;
+  max-width: 250px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+p {
+  font-weight: bold;
+  color: #58585A;
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.sem-mensagens {
+  background: lighten(#58585A, 45);
+  border: 1px solid #58585A;
+  border-radius: 5px;
+  color: #58585A;
+  font-size: 16px;
+  padding: 8px 5px 5px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+::ng-deep .mat-tab-label {
+  color: black !important;
+}
